@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F5F7FA">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Nuevo contacto" android:textColor="#07569A" android:textSize="26sp"
+            android:textStyle="bold" android:gravity="center" android:padding="12dp"/>
+        <ImageView android:id="@+id/imgContacto" android:layout_width="130dp" android:layout_height="130dp"
+            android:layout_gravity="center" android:layout_margin="12dp" android:background="#DCEAF5"
+            android:src="@android:drawable/ic_menu_camera" android:scaleType="centerCrop"
+            android:contentDescription="Fotografía del contacto"/>
+        <Button android:id="@+id/btnImagen" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Agregar imagen"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="País" android:textStyle="bold"/>
+        <Spinner android:id="@+id/spPais" android:layout_width="match_parent" android:layout_height="48dp" android:entries="@array/paises"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nombre" android:textStyle="bold"/>
+        <EditText android:id="@+id/etNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nombre completo" android:inputType="textCapWords" android:maxLength="100"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Teléfono" android:textStyle="bold"/>
+        <EditText android:id="@+id/etTelefono" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Número de teléfono" android:inputType="phone" android:maxLength="15"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nota" android:textStyle="bold"/>
+        <EditText android:id="@+id/etNota" android:layout_width="match_parent" android:layout_height="100dp" android:gravity="top" android:hint="Escriba una nota" android:inputType="textCapSentences|textMultiLine"/>
+        <Button android:id="@+id/btnGuardar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Guardar contacto" android:layout_marginTop="12dp"/>
+        <Button android:id="@+id/btnVerContactos" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ver contactos"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    android:gravity="center" android:padding="24dp" android:background="#F5F7FA">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Llamar"
+        android:textSize="28sp" android:textStyle="bold" android:gravity="center" android:textColor="#07569A" android:padding="16dp"/>
+    <ImageView android:id="@+id/imgLlamar" android:layout_width="150dp" android:layout_height="150dp"
+        android:src="@android:drawable/ic_menu_myplaces" android:scaleType="centerCrop" android:contentDescription="Fotografía del contacto"/>
+    <TextView android:id="@+id/tvNombreLlamar" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Nombre" android:textSize="25sp" android:textStyle="bold" android:gravity="center" android:padding="12dp" android:textColor="#123B64"/>
+    <TextView android:id="@+id/tvTelefonoLlamar" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Teléfono" android:textSize="20sp" android:gravity="center" android:padding="8dp"/>
+    <Button android:id="@+id/btnLlamarAhora" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Llamar ahora" android:layout_marginTop="32dp"/>
+    <Button android:id="@+id/btnCancelarLlamada" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cancelar"/>
+</LinearLayout>

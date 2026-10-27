@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    android:padding="12dp" android:background="#F5F7FA">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Contactos"
+        android:textSize="26sp" android:textStyle="bold" android:textColor="#07569A" android:padding="8dp"/>
+    <EditText android:id="@+id/etBuscar" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Buscar por nombre o teléfono" android:inputType="text" android:drawableStart="@android:drawable/ic_menu_search"/>
+    <ListView android:id="@+id/lvContactos" android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:divider="#DDDDDD" android:dividerHeight="1dp" android:choiceMode="singleChoice"/>
+    <TextView android:id="@+id/tvSeleccionado" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Seleccione un contacto" android:textStyle="bold" android:textColor="#07569A" android:padding="8dp"/>
+    <Button android:id="@+id/btnActualizar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actualizar"/>
+    <Button android:id="@+id/btnEliminar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Eliminar"/>
+    <Button android:id="@+id/btnCompartir" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Compartir"/>
+    <Button android:id="@+id/btnVerImagen" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ver imagen"/>
+    <Button android:id="@+id/btnLlamar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Llamar"/>
+</LinearLayout>
